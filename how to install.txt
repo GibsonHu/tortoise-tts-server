@@ -1,0 +1,14 @@
+gibsondesktop-c9007
+
+install gcp-sdk
+
+Run
+gcloud app create --project=tortoise-tts-server
+gcloud components install app-engine-python
+
+windows:
+pip install waitress 
+pip install flask-restful
+
+Test:
+waitress-serve --listen=127.0.0:80000 main:app
